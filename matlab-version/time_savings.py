@@ -14,8 +14,8 @@ if __name__ == '__main__':
 	scores = [float(l.strip().split(",")[-1]) for l in lines]
 	to_check = [s for s in scores if s > threshold]
 	print
-	print "Filename: {0}".format(os.path.basename(results))
-	print "MSD threshold: {0}".format(threshold)
-	print "Total labels: {0}".format(len(scores))
-	print "Labels > threshold: {0}".format(len(to_check))
-	print "Reduction: {0:.2f}%".format(100-(float(len(to_check))/len(scores)*100))
+	print "Filename: {}".format(os.path.basename(results))
+	print "MSD threshold: {}".format(threshold)
+	print "Total labels: {}".format(len(scores))
+	print "Labels > threshold: {}".format(len(to_check))
+	print "Reduction: {:.2%}".format(1-(float(len(to_check))/len(scores)))
